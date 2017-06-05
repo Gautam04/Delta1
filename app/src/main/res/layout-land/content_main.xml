@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.gautamnarayanan.gautam6b.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <RelativeLayout
+        android:id="@+id/Glayout"
+        android:layout_width="600dp"
+        android:layout_height="300dp"
+        tools:layout_editor_absoluteX="-4dp"
+        tools:layout_editor_absoluteY="-3dp">
+
+        <Button
+            android:id="@+id/Gbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="226dp"
+            android:layout_marginStart="226dp"
+            android:layout_marginTop="34dp"
+            android:text="Red" />
+
+        <Button
+            android:id="@+id/Gbutton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/Gbutton"
+            android:layout_alignStart="@+id/Gbutton"
+            android:layout_below="@+id/Gbutton"
+            android:text="Green" />
+
+        <Button
+            android:id="@+id/Gbutton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/Gbutton2"
+            android:layout_alignStart="@+id/Gbutton2"
+            android:layout_below="@+id/Gbutton2"
+            android:text="Blue" />
+
+        <Button
+            android:id="@+id/Gbutton4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/Gbutton3"
+            android:layout_alignStart="@+id/Gbutton3"
+            android:layout_below="@+id/Gbutton3"
+            android:text="Reset" />
+
+        <EditText
+            android:id="@+id/Et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/Gbutton2"
+            android:layout_marginLeft="14dp"
+            android:layout_marginStart="14dp"
+            android:layout_toEndOf="@+id/Gbutton"
+            android:layout_toRightOf="@+id/Gbutton"
+            android:ems="10"
+            android:inputType="number"
+            tools:width="75dp" />
+
+        <EditText
+            android:id="@+id/Et2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/Gbutton3"
+            android:layout_alignLeft="@+id/Et"
+            android:layout_alignStart="@+id/Et"
+            android:ems="10"
+            android:inputType="number"
+            tools:width="75dp" />
+
+        <EditText
+            android:id="@+id/Et3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/Gbutton4"
+            android:layout_alignLeft="@+id/Et2"
+            android:layout_alignStart="@+id/Et2"
+            android:ems="10"
+            android:inputType="number"
+            tools:width="75dp" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
